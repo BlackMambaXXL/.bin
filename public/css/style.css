@@ -1,0 +1,385 @@
+/*Обнуление */
+html{
+    scroll-behavior: smooth;
+}
+
+body, div, span, h1, h2, h3, h4, h5, h6, p,  a, img, ol, ul, li, form, footer, header, nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: 'Montserrat', sans-serif;
+}
+button{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Шапка сайта*/
+header {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    border-bottom: 3px black solid;
+    display: flex;
+}
+header a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+.header-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header__nav {
+    display: flex;
+    gap: 0px 40px;
+}
+.header__nav a{
+    color: white;
+}
+.header__logo {
+    display: flex;
+    justify-content: center;
+    padding-right: 5%;
+}
+.header__auth-reg {
+    display: flex;
+    align-items: center;
+    gap: 0px 25px;
+}
+.header__auth-reg a{
+    color: white;
+}
+.header__auth-reg span {
+    color: white;
+    font-size: 30px;
+}
+
+
+/*О нас*/
+.about {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.about-content {
+    border-radius: 40px;
+    padding: 30px;
+    background-image: url("../images/logo/Logo.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: black;
+    max-width: 1320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about__title {
+    color: white;
+    font-family: 'Montserrat Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
+/*Слайдер*/
+.slider__title{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+}
+.slider-container{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 30px;
+}
+    /*Адаптация слайдера*/
+@media (max-width:1200px){
+    .slider-container{
+        max-width: 970px;
+    }
+}
+@media (max-width:992px){
+    .slider-container{
+        max-width: 750px;
+    }
+}
+.slider img{
+    height: 500px;
+    width: 650px;
+}
+.slider-navigation .button{
+    margin-right: 20px;
+}
+.slider-navigation{
+    display: flex;
+    padding-top: 30px;
+}
+
+.slider-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.slider-buttons .button{
+    margin-right: 20px;
+}
+/* кнопки слайдера  */
+.button p {
+    cursor: pointer;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s ease-out;
+}
+.button :hover{
+    background-color: #00694a;
+}
+.button :active{
+    background-color: #05a475;
+    padding: 5px 10px;
+}
+/* кнопки слайдера  */
+
+.slider{
+    overflow: hidden;
+    width: 650px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 50px auto;
+}
+
+.slider-line{
+    height: 500px;
+    width: 3250px;
+    background: white;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+.slide-block {
+
+}
+.slide-block__description {
+    position: absolute;
+    padding: 30px 80px;
+    font-size: 18px;
+
+}
+/* Слайдер */
+/*Где мы находимся?*/
+.contacts {
+    display: flex;
+    justify-content: center;
+}
+.contacts__wrapper {
+    width: 1620px;
+    height: 920px;
+    background-image: url("../images/pictures/map.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.contacts__body {
+    border-radius: 20px;
+    width: 400px;
+    margin: 150px 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    gap: 50px;
+    padding: 50px;
+
+}
+.contacts__title {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    border-left: 3px solid #02CC8F;
+    padding-left: 10px;
+}
+.contacts__description {
+    color: white;
+    font-size: 20px;
+    border-left: 3px solid #02CC8F;
+    padding-left: 10px;
+}
+.contacts__socials img{
+    width: 40px;
+}
+/*Страница каталога*/
+.catalog {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    gap: 100px;
+    margin-bottom: 200px;
+
+}
+.catalog-line {
+    display: flex;
+    justify-content: space-evenly;
+}
+.catalog-item {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: black;
+}
+.catalog-item img{
+    border-radius: 20px;
+    width: 350px;
+}
+.catalog-item__description {
+    padding-top: 20px;
+    padding-left: 5px;
+    gap: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+
+}
+.catalog-item__description p{
+    color: white;
+    font-size: 20px;
+
+}
+
+.catalog-item__buy-button{
+    margin-bottom: 10px;
+    width: 100px;
+    cursor: pointer;
+    background-color: #003b2b;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s ease-out;
+}
+.catalog-item__buy-button:hover{
+    background-color: #00694a;
+}
+.catalog-item__buy-button:active{
+    background-color: #05a475;
+}
+/*Авторизация и регистрация*/
+.auth {
+    background-color: #00694a;
+    display: flex;
+    justify-content: center;
+    padding: 150px 0px;
+}
+.auth__content {
+
+}
+
+.auth__content form{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px 50px;
+}
+.auth__content input{
+    margin-bottom: 30px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(235, 231, 231);
+    padding: 5px 12px;
+    outline: none;
+}
+.auth__content a{
+    color: #00694a;
+}
+.auth__content p{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+.auth__titles{
+    font-size: 22px;
+    border-left: #02CC8F 2px solid;
+    padding-left: 10px;
+}
+.auth__button{
+    display: flex;
+    justify-content: center;
+}
+.auth__button button{
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    background-color: #00694a;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+    transition: all 0.3s ease-out;
+    margin-bottom: 30px;
+}
+.auth__button button:hover{
+    background-color: #05a475;
+}
+.auth__button button:active{
+    background-color: #003022;
+}
+.error__message {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: darkred;
+}
+
+/*Подвал сайта*/
+
+footer__content {
+    background-color: black;
+    display: flex;
+    border-top: 3px black solid;
+    gap: 100px;
+}
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 50px 200px;
+    gap: 20px;
+}
+.footer__nav a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border-left: 3px #02CC8F solid;
+    padding-left: 10px;
+}
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/public/fonts/Montserrat-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url(/public/fonts/Montserrat-Bold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
